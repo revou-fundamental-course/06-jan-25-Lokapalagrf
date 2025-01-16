@@ -12,35 +12,80 @@
 
 <body>
     <!-- Logo & Navigation -->
-    <header class="main-header">
+       <header class="main-header">
+
         <!-- Logo -->
-        <div class="Logo-Icon">
-            <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png" alt="Logo Icon Revou">
-        </div>
+             <div class="Logo-Icon">
+                <img src="https://i.pinimg.com/550x/ea/ff/b0/eaffb09f4f2357261ea668699345f501.jpg" alt="Logo-Icon-Revou">
+             </div>
 
         <!-- Navigation-->
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Our Profile</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Message Us</a>
-        </nav>
+            <nav class="Navigation">
+                 <a href="#home">Home</a>
+                 <a href="#about-us">About Us</a>
+                 <a href="#ourprofile">Our Profile</a>
+                 <a href="#portfolio">Portfolio</a>
+                 <a href="#message-us">Message Us</a>
+            </nav>
 
-    </header>
-
+        </header>
+        
     <hr />
-
+    
     <!-- Main Content -->
     <main>
         <!-- Home Page -->
-        <section>
+        <section id="home-page">
             <!-- Title -->
             <header>
-                <h1>Hi <span id="user-greeting">User</span>, Welcome to our website </h1>
-                <p>Ini adalah website latihan pertama</p>
+                <h1>Hi <span id="user-greeting">User</span>, Welcome to our website Ruang Hijau </h1>
+
             </header>
 
-            <div class="banner-image"></div>
+            <div class="banner-image banner-image-1"></div>
+            <div class="banner-image banner-image-2"></div>
+            <div class="banner-image banner-image-3"></div>
+
+            
+        </section>
+
+        <!-- About Us -->
+        <section id="about-us">
+            <!-- Title -->
+            <div class="about-1">
+                <h1 class="about1">About Us</h1>
+                <p>A platform dedicated to celebrating and supporting green spaces in our communities.
+
+                    We believe that green spaces are essential for a healthier, happier, and more sustainable world. Our goal is to provide information, inspiration, and resources to help people connect with nature and create greener environments.
+                    
+                    Whether you’re looking for tips to create your own garden, learn about sustainable practices, or discover amazing parks near you, we’re here to guide you every step of the way.
+                    
+                    Let’s work together to make the world a greener place!
+                    </p>
+            </div>
+            <div class="container">
+                <div class="misi-wrapper">
+                    <div class="visi-misi">
+                        <h1></h1>
+                        <div class="cards">
+                            <div class="card">
+                                <i class="fa-brands fa-chromecast"></i>
+                                <h2>Visi</h2>
+                                <p>Mewujudkan lingkungan yang sehat dan lestari melalui pengelolaan ruang hijau yang berkelanjutan, 
+                                    sehingga memberikan manfaat ekologis, sosial, dan ekonomi bagi generasi saat ini dan mendatang.</p>
+                            </div>
+                            <div class="card">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <h2>Misi</h2>
+                                <p>Organisasi ini berkomitmen melestarikan dan memperluas ruang hijau melalui penanaman pohon, 
+                                    perlindungan kawasan dari urbanisasi, dan rehabilitasi area yang rusak. 
+                                    Kami meningkatkan kesadaran masyarakat lewat edukasi dan kampanye, serta menjalin kolaborasi dengan berbagai pihak untuk mendukung kebijakan berkelanjutan.
+                                    Dengan inovasi dan penelitian, kami menjaga keanekaragaman hayati, memulihkan ekosistem, dan melindungi flora serta fauna lokal demi keseimbangan alam yang harmonis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Our Profile -->
@@ -53,6 +98,8 @@
             <div class="content"></div>
         </section>
 
+        <hr />
+
         <!-- Portfolio -->
         <section>
             <!-- Title -->
@@ -63,14 +110,51 @@
             <div class="content"></div>
         </section>
 
+        <hr />
+
         <!-- Message Us -->
-         <section>
+         <section id="Message">
             <!-- Title -->
             <header>
                 <h1>Message Us</h1>
-            </header>
+                <form action="#" class="form">
+                    <table>
+                            <tr>
+                                <td>Nama</td>
+                                <td><input type="text" placeholder="Masukkan Nama Anda"></td>
+                            </tr>
 
-            <div class="content"></div>
+                            <tr>
+                                <td>Tanggal Lahir</td>
+                                <td><input type="date"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Jenis Kelamin</td>
+                                <td><input type="radio" name="jk"> Laki-laki
+                                <input type="radio" name="jk"> Perempuan
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Pesan</td>
+                                <td><textarea placeholder="Masukkan Pesan"></textarea></td>
+                            </tr>
+
+                    </table>
+                </form>
+            </header>
+            <div class="button">
+                <input type="submit" value="Submit">
+            </div>
+
+            <div class="content4" id="output">
+                <h2></h2>
+                <p><strong>Nama:</strong><span id="output-nama"></span></p>
+                <p><strong>Tanggal Lahir:</strong><span id="output-tanggal"></span></p>
+                <p><strong>Jenis Kelamin:</strong><span id="output-jk"></span></p>
+                <p><strong>Pesan:</strong><span id="output-pesan"></span></p>
+            </div>
          </section>
 
     </main>
@@ -78,11 +162,13 @@
     <hr />
 
     <!-- Footer -->
-    <footer>
-        <header>
-            <p2>Create By Nazla</p2>
+    <footer class="FooterCreate">
+        <header class="CreateBy">
+            <p2>© 2025 Ruang Hijau</p2>
         </header>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

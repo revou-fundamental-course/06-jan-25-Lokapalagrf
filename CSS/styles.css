@@ -1,1 +1,203 @@
 /* Ini File CSS */
+
+/* Tampilan Menu Home */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo-Icon{
+    height: 50px;
+    width: 50px;
+}
+
+.Logo-Icon img {
+    width: 50px;
+    height: auto;
+}
+
+.banner-image {
+    border: none;
+    height: 450px;
+}
+
+.content {
+    height: 500px;
+}
+
+/* Navigasi */
+
+.Navigation {
+    display: flex;
+    gap: 20px
+}
+
+.Navigation a{
+    text-decoration: none;
+    color: black;
+    font-size: 5px 10px;
+}
+
+.Navigation a:hover {
+    background-color: #f1fcf1;
+    border-radius: 3px;
+    color: #043927;
+}
+
+/* About Us */
+
+.about1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.about-1 h1 {
+    margin-bottom: 20px; /* Memberikan jarak antara judul dan paragraf */
+    font-size: 2.0rem; /* Ukuran font judul */
+    color: #333; /* Warna teks judul */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border;
+}
+
+.container{
+    min-height: 100px;
+    width: 100%;
+}
+
+.misi-wrapper{
+    padding: 5% 8%;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 100px;
+    margin-top: 80px;
+}
+
+.card{
+    height: 305px;
+    width: 370px;
+    background-color: #c5d7cb;
+    padding: 3% 8%;
+    border: ;
+    border-radius: 8px;
+    transition: .6s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card h2{
+    color : black;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+
+/* Tampilan Banner*/
+.banner-image {
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-image-1 {
+    background-image: url()
+}
+
+.banner-image-2 {
+    background-image: url()
+}
+
+.banner-image-3 {
+    background-image: url()
+}
+
+/* Tampilan Footer Paling Bawah CreateBy */
+.FooterCreate {
+    background-color: #043927;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.FooterCreate {
+    font-size: 14x;
+    margin: 0;
+}
+
+.CreateBy {
+    display: flex;
+    justify-content: center;
+}
+
+.teks {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+/* Massage Us */
+
+.container {
+    display: flex; /* Membuat elemen anak tersusun horizontal */
+    justify-content: space-between; /* Memberikan ruang di antara elemen */
+    align-items: flex-start; /* Elemen sejajar di bagian atas */
+    gap: 20px; /* Jarak antar elemen */
+    padding: 20px;
+    max-width: 1200px; /* Membatasi lebar maksimum kontainer */
+    margin: auto; /* Memusatkan kontainer di halaman */
+}
+
+.form-container {
+    display: flex; /* Mengaktifkan flexbox untuk elemen di dalamnya */
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+    width: 50%; /* Form mengambil 50% lebar kontainer */
+    gap: 10px; /* Jarak antar elemen dalam formulir */
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%; /* Input dan textarea memenuhi lebar form */
+    padding: 10px; /* Ruang di dalam elemen input */
+    border: 1px solid #ddd; /* Garis tepi abu-abu */
+    border-radius: none; /* Sudut melengkung */
+    font-size: 16px; /* Ukuran teks */
+}
+
+.form-container button {
+    align-self: flex-start; /* Memastikan tombol diatur secara fleksibel */
+    padding: 10px 20px; /* Ruang di dalam tombol */
+    background-color: #007BFF; /* Warna latar tombol biru */
+    color: #fff; /* Warna teks putih */
+    border: none; /* Menghapus garis tepi */
+    border-radius: 4px; /* Sudut melengkung */
+    cursor: pointer; /* Ubah kursor saat hover */
+    font-size: 16px; /* Ukuran teks tombol */
+}
+
+.form-container button:hover {
+    background-color: #0056b3; /* Warna latar tombol saat hover */
+}
+
+.content4 {
+    width: 50%; /* Kotak data mengambil 50% lebar kontainer */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    height: fit-content; /* Agar tinggi kotak sesuai isi */
+}
