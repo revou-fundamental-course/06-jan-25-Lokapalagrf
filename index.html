@@ -21,12 +21,18 @@
 
         <!-- Navigation-->
             <nav class="Navigation">
-                 <a href="#home">Home</a>
+                 <a href="#home-page">Home</a>
                  <a href="#about-us">About Us</a>
                  <a href="#ourprofile">Our Profile</a>
                  <a href="#portfolio">Portfolio</a>
-                 <a href="#message-us">Message Us</a>
+                 <a href="#contact">Contact</a>
             </nav>
+
+            <button class="tombol" id="tombol">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
         </header>
         
@@ -38,8 +44,9 @@
         <section id="home-page">
             <!-- Title -->
             <header>
-                <h1 class="user">Hi <span id="user-greeting">User</span>, Welcome to our website Ruang Hijau </h1>
-
+                <h1 class="user">
+                    Hi <span id="user-greeting">User</span>, Welcome to our website Ruang Hijau
+                </h1>
             </header>
 
             <div class="wrapperbanner">
@@ -70,15 +77,23 @@
         <section id="about-us">
             <!-- Title -->
             <div class="about-1">
-                <h1 class="about1">About Us</h1>
-                <p>A platform dedicated to celebrating and supporting green spaces in our communities.
-
-                    We believe that green spaces are essential for a healthier, happier, and more sustainable world. Our goal is to provide information, inspiration, and resources to help people connect with nature and create greener environments.
-                    
-                    Whether you’re looking for tips to create your own garden, learn about sustainable practices, or discover amazing parks near you, we’re here to guide you every step of the way.
-                    
-                    Let’s work together to make the world a greener place!
-                    </p>
+                <h1 class="about1-title"></h1>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="about-subtitle">Komitmen Kami untuk Bumi</h2>
+                        <p>
+                            Kami adalah <strong>Ruang Hijau</strong>, sebuah organisasi yang bertujuan menciptakan dunia yang lebih bersih, hijau, 
+                            dan berkelanjutan. Dengan semangat melestarikan alam, kami percaya bahwa setiap langkah kecil dapat membawa perubahan besar.
+                            Kami menginspirasi dan mengajak masyarakat untuk mengambil tindakan nyata, dari reboisasi hingga edukasi lingkungan.
+                        </p>
+                        <p>
+                            Bersama, kita dapat menjaga keindahan bumi ini untuk generasi mendatang.
+                        </p>
+                    </div>
+                    <div class="about-icon">
+                        <img src="assets\logo daun.jpg" alt="Icon Ruang Hijau">
+                    </div>
+                </div>
             </div>
             <div class="container">
                 <div class="misi-wrapper">
@@ -106,74 +121,72 @@
         </section>
 
         <!-- Our Profile -->
-        <section>
+        <section id="ourprofile">
             <!-- Title -->
-            <header>
-                <h1>Our Profile </h1>
-            </header>
-
-            <div class="content"></div>
+            <div class="profile-container">
+                <section class="about-section">
+                    <div class="about-wrapper">
+                        <h1 class="about-title">Tentang Kami</h1>
+                        <p class="about-description">
+                            <strong>Ruang Hijau</strong> adalah komunitas yang berdedikasi untuk menciptakan lingkungan yang lebih hijau dan sehat. 
+                            Kami percaya bahwa setiap langkah kecil dapat membawa perubahan besar bagi bumi kita. Dengan berbagai program 
+                            seperti reboisasi, edukasi lingkungan, dan pengelolaan sampah, kami berkomitmen untuk menjaga kelestarian alam 
+                            demi generasi mendatang.
+                        </p>
+                        <button class="learn-more-btn">Pelajari Lebih Lanjut</button>
+                    </div>
+                </section>
+            </div>
         </section>
 
         <hr />
 
         <!-- Portfolio -->
-        <section>
-            <!-- Title -->
-            <header>
-                <h1>Portfolio </h1>
-            </header>
-
-            <div class="content"></div>
+        <section id="portfolio" class="portfolio-section">
+            <h2 class="section-title">Portfolio Proyek Kami</h2>
+            <p class="section-description">
+                Berikut adalah beberapa proyek lingkungan yang telah kami lakukan untuk menciptakan dunia yang lebih hijau dan berkelanjutan.
+            </p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Reboisasi Hutan</h3>
+                    <p>Program penanaman ribuan pohon untuk memulihkan hutan yang rusak di berbagai daerah.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Kampanye Pengurangan Plastik</h3>
+                    <p>Melakukan edukasi kepada masyarakat tentang pengurangan penggunaan plastik sekali pakai.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Bersih Pantai</h3>
+                    <p>Aksi bersih pantai untuk mengurangi sampah plastik yang mencemari lautan dan ekosistem laut.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Edukampanye Daur Ulang</h3>
+                    <p>Mengajarkan cara-cara mudah mendaur ulang sampah rumah tangga untuk mengurangi limbah yang terbuang.</p>
+                </div>
+            </div>
         </section>
 
         <hr />
 
-        <!-- Message Us -->
-         <section id="Message">
-            <!-- Title -->
-            <header>
-                <h1 class="message1">Message Us</h1>
-                <form action="#" class="form">
-                    <table>
-                            <tr>
-                                <td>Nama</td>
-                                <td><input type="text" placeholder="Masukkan Nama Anda"></td>
-                            </tr>
-
-                            <tr>
-                                <td>Tanggal Lahir</td>
-                                <td><input type="date"></td>
-                            </tr>
-
-                            <tr>
-                                <td>Jenis Kelamin</td>
-                                <td><input type="radio" name="jk"> Laki-laki
-                                <input type="radio" name="jk"> Perempuan
-                                </td>
-                            </tr>
-                        
-                            <tr>
-                                <td>Pesan</td>
-                                <td><textarea placeholder="Masukkan Pesan"></textarea></td>
-                            </tr>
-
-                    </table>
-                </form>
-            </header>
-            <div class="button">
-                <input type="submit" value="Submit">
+        <!-- Contact -->
+        <section id="contact" class="contact-section">
+            <h2>Kontak Kami</h2>
+            <form class="contact-form">
+                <input id="name" type="text" placeholder="Nama Anda" required>
+                <input id="email" type="email" placeholder="Email Anda" required>
+                <textarea id="message" placeholder="Pesan Anda" required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        
+            <!-- Output -->
+            <div class="output-section" id="output-section">
+                <h3>Informasi yang Anda Kirimkan:</h3>
+                <p><strong>Nama:</strong> <span id="output-name">-</span></p>
+                <p><strong>Email:</strong> <span id="output-email">-</span></p>
+                <p><strong>Pesan:</strong> <span id="output-message">-</span></p>
             </div>
-
-            <div class="content4" id="output">
-                <h2></h2>
-                <p><strong>Nama:</strong><span id="output-nama"></span></p>
-                <p><strong>Tanggal Lahir:</strong><span id="output-tanggal"></span></p>
-                <p><strong>Jenis Kelamin:</strong><span id="output-jk"></span></p>
-                <p><strong>Pesan:</strong><span id="output-pesan"></span></p>
-            </div>
-         </section>
-
+        </section>
     </main>
 
     <hr />
