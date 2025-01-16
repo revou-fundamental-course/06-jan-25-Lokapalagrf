@@ -1,5 +1,10 @@
 // Ini File Javascript
 
+//user
+const userGreeting = document.getElementById("user-greeting");
+
+let userName =localStorage.getItem("userName");
+
 
 // Slide Gambar Banner
 let indexBanner = 0;
@@ -25,7 +30,7 @@ function changeBackground() {
         bannerList[i].style.display = 'none';
     }
 
-    bannerList[indexBanner].Style.display = 'block';
+    bannerList[indexBanner].style.display = 'block';
 }
 
 setInterval(nextBanner, 3000);

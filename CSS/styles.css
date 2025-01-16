@@ -45,12 +45,21 @@
     color: #043927;
 }
 
+/* User*/
+
+.user {
+    margin-block: 50px;
+    display: flex;
+    justify-content: center;
+}
+
 /* About Us */
 
 .about1 {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
+    margin-block: 50px;
 }
 
 .about-1 h1 {
@@ -106,23 +115,67 @@
 
 
 /* Tampilan Banner*/
-.banner-image {
-    height: 450px;
-    background-size: cover;
-    background-position: center;
+.banner-images{
+    display: flex;
+    width: 100%;
+    transition: 2s;
 }
 
-.banner-image-1 {
-    background-image: url()
+.banner-images img {
+    width: 100%;
 }
 
-.banner-image-2 {
-    background-image: url()
+.wrapperbanner{
+    width: 800px;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
 }
 
-.banner-image-3 {
-    background-image: url()
+#slide-1:target ~ .banner-images {
+    margin-left: 0px;
 }
+
+#slide-2:target ~ .banner-images {
+    margin-left: -100%;
+}
+
+#slide-3:target ~ .banner-images {
+    margin-left: -200%;
+}
+
+.navigasibanner a{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #deded;
+    font-size: 0px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.navigasibanner a:hover{
+    background-color: #666;
+}
+
+.navigasibanner {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -50px;
+}
+
+@media screen and (max-with : 800px){
+    .wrapperbanner {
+        width: 90%;
+    }
+}
+
+
 
 /* Tampilan Footer Paling Bawah CreateBy */
 .FooterCreate {
@@ -151,6 +204,25 @@
 }
 
 /* Massage Us */
+
+.message1{
+    display: flex;
+    justify-content: center;
+    margin-block: auto;
+    margin: 30px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-block: 30px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
 
 .container {
     display: flex; /* Membuat elemen anak tersusun horizontal */
